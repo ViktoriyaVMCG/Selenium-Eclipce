@@ -48,5 +48,7 @@ To work with Selenium & Eclipce on the computer we need 3 things to install:
     * That locates into folders: `selenium-java`
     * client-combined
     * client-combined-sources
+    
+All those fies will appear in the left bar of Eclipse in the folder: Referenced Libraries
   
   
