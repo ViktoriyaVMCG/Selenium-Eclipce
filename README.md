@@ -7,5 +7,12 @@ To work with Selenium & Eclipce on the computer we need 3 things to install:
 1. After downloading JAVA 
   * Go to the Settings -> System -> Edit the system environment variables
   * Choose the environment variables
-  * Find in the pop-up window: *System variables following* inside it *Path* click on it and then click on edit. Then in the new window paste at the end of a path new path where locates the bin file of just downloaded java and click save
+  * Find in the pop-up window: *System variables following* inside it *Path* click on it and then click on edit. 
+  * In the new pop-up window paste at the end of the file a new path that should include the location the bin file in the java folder and click save
      *  *Example `C:\Program Files\Java\jdk-14.0.1\bin`* 
+  * After that call cm
+  * Type the following to find out if Java was successfully installed
+    *   `java -version`
+  * If java successfully installed we will see a response of java version
+  
+2. 
