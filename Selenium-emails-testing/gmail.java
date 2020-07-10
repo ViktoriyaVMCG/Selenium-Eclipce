@@ -15,14 +15,14 @@ public class demo {
 		//setting driver properties
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\selenium-java-3.141.59\\chromedriver_win32\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-        options.setExperimentalOption("useAutomationExtension", false);
-        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-        WebDriver driver =  new ChromeDriver(options); 
-        driver.get("https://accounts.google.com/signin");
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='identifierId']"))).sendKeys("abc@gmail.com");
-        driver.findElement(By.id("identifierNext")).click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='password']"))).sendKeys("password");
-        driver.findElement(By.id("passwordNext")).click();
+        	options.addArguments("start-maximized");
+        	options.setExperimentalOption("useAutomationExtension", false);
+        	options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+        	WebDriver driver =  new ChromeDriver(options); 
+        	driver.get("https://accounts.google.com/signin");
+        	new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='identifierId']"))).sendKeys("abc@gmail.com");
+        	driver.findElement(By.id("identifierNext")).click();
+        	new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='password']"))).sendKeys("password");
+        	driver.findElement(By.id("passwordNext")).click();
 	}
 }
